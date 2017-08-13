@@ -1,0 +1,35 @@
+apple_price = 2
+# Assign 10 to the money variable
+money = 10
+
+input_count = input('How many apples do you want?: ')
+count = int(input_count)
+total_price = apple_price * count
+
+print('You will buy ' + str(count) + ' apples')
+print('The total price is ' + str(total_price) + ' dollars')
+
+# Add control flow based on the comparison of money and total_price
+
+if money > total_price:
+    print('You have bought ' +str(count)+ ' apples')
+    money -= total_price
+    print('You have ' +str(money)+ ' dollars left')
+
+elif money == total_price:
+    print('You have bought' +str(count)+ ' apples')
+    print('Your wallet is now empty')
+
+else:
+    print('You do not have enough money')
+    print('You cannot buy that many apples')
+    
+
+
+ #OUTPUT
+ # How many apples do you want?: 3
+ # You will buy 3 apples
+ # The total price is 6 dollars
+ # You have bought 3 apples
+ # You have 4 dollars left
+    
